@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BLUESTOCK</h1>
+        <h2>Create an account</h2>
+        <form action="#">
+            <label>Name</label>
+            <input type="text" placeholder="Saisha Wagh" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="hello@bluestock.in" required>
+
+            <label>Password</label>
+            <div class="password-container">
+                <input type="password" id="signup-password" placeholder="**********" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('signup-password')">
+                    👁️
+                </button>
+            </div>
+
+            <p>By continuing, you agree to our <a href="#">terms of service</a>.</p>
+
+            <div class="checkbox">
+                <input type="checkbox" id="robot-check" required>
+                <label for="robot-check">I'm not a robot</label>
+            </div>
+
+            <button type="submit">Sign up</button>
+
+            <p>or sign up with</p>
+            <button class="google">Continue with Google</button>
+
+            <p>Already have an account? <a href="login.html">Sign in here</a></p>
+        </form>
+    </div>
+</body>
+</html>

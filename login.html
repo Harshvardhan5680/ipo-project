@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestock - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" height="25px"> 
+        <form action="#">
+            <label>Email Address</label>
+            <input type="email" placeholder="johndoe@gmail.com" required>
+
+            <label>Password</label>
+            <div class="password-container">
+                <input type="password" id="login-password" placeholder="**********" required>
+                <button type="button" class="toggle-password" onclick="togglePassword('login-password')">
+                👁️
+                </button>
+            </div>
+
+            <a href="forgot-password.html" target="_blank">Forgot Password?</a>
+
+            <div class="checkbox">
+                <input type="checkbox" id="robot-check" required>
+                <label for="robot-check">I'm not a robot</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="keep-signed-in">
+                <label for="keep-signed-in">Keep me signed in</label>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <p>or sign in with</p>
+            <button class="google">Continue with Google</button>
+
+            <p>Don't have an account? <a href="signup.html">Create an account</a></p>
+        </form>
+    </div>
+</body>
+</html>
