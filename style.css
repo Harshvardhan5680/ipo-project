@@ -1,0 +1,78 @@
+body {
+    font-family: poppins;
+    background-color: #f7f7ff;
+}
+.logo {
+    height: 70px; 
+    width: auto; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.investor-card:hover {
+    transform: scale(1.05);
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-title {
+    font-weight: bold;  
+}
+
+.nav-products::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+.nav-broker {
+    position: relative;
+}
+
+.nav-broker::after {
+    content: " ↗";
+    font-size: 12px;
+}
+
+.badge-new {
+    font-size: 10px;
+    background-color: #2F51FC;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.investor-card {
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.investor-card img {
+    width: 100%; 
+    height: 220px; 
+    object-fit: cover; 
+    padding: 10px; 
+    background: white;
+    display: block;
+}
+
+
