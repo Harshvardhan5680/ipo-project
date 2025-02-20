@@ -5,182 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo_min.png" type="image/x-icon">
     <title>Bluestock - IPO Dashboard</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --sidebar-bg: #f8f9fe;
-            --primary-blue: #5b6ae8;
-            --secondary-blue: #7084f7;
-            --orange-circle: #ffa726;
-            --turquoise-circle: #26c6da;
-        }
-        
-        body {
-            background-color: white;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-        
-        .sidebar {
-            background-color: var(--sidebar-bg);
-            height: 100vh;
-            width: 240px;
-            position: fixed;
-            left: 0;
-            top: 0;
-            padding-top: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
-        }
-        
-        .main-content {
-            margin-left: 240px;
-            padding: 20px 40px;
-        }
-        
-        .logo {
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .logo img {
-            height: 30px;
-        }
-        
-        .menu-item {
-            padding: 12px 25px;
-            color: #666;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 14px;
-            margin: 4px 0;
-        }
-        
-        .menu-item:hover, .menu-item.active {
-            background-color: white;
-            color: var(--primary-blue);
-            border-radius: 8px;
-            margin: 4px 10px;
-        }
-        
-        .menu-item.active {
-            font-weight: 600;
-        }
-        
-        .search-bar {
-            background: var(--sidebar-bg);
-            border-radius: 8px;
-            padding: 8px 15px;
-            margin-bottom: 30px;
-        }
-        
-        .search-bar input {
-            border: none;
-            background: transparent;
-            width: 100%;
-            outline: none;
-        }
-        
-        .circles-container {
-            position: relative;
-            height: 300px;
-            margin-bottom: 30px;
-        }
-        
-        .stat-circle {
-            position: absolute;
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 500;
-        }
-        
-        .total-ipo {
-            width: 200px;
-            height: 200px;
-            background-color: var(--orange-circle);
-            left: 150px;
-            top: 20px;
-        }
-        
-        .ipo-loss {
-            width: 150px;
-            height: 150px;
-            background-color: var(--primary-blue);
-            left: 50px;
-            top: 50px;
-        }
-        
-        .ipo-gain {
-            width: 150px;
-            height: 150px;
-            background-color: var(--turquoise-circle);
-            left: 100px;
-            top: 120px;
-        }
-        
-        .quick-links {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .link-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .link-item img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
-        
-        .main-board {
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .donut-chart {
-            width: 200px;
-            height: 200px;
-            margin: 20px auto;
-        }
-        
-        .status-legend {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        
-        .status-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-        }
-        
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <!-- Sidebar -->
     <div class="sidebar">
         <div class="logo">
-            <img src="logo.png" alt="Bluestock Logo">
+            <img src="logo.png" alt="Bluestock Logo" height="15px">
         </div>
         
         <div class="menu-list">
@@ -220,22 +50,21 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <div class="main-content">
-        <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="d-flex justify-content-between align-items-start mb-4">
             <div class="search-bar flex-grow-1 me-4">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="user-section d-flex align-items-center gap-3 width: 50px; height: 20px; ">
-                <img src="usser img.jpg" alt="User" class="rounded-circle" class="img-fluid" style="max-width: 50px; max-height: 50px; ">
-                <span>Hi, Harsh</span>
+            <div class="user-section d-flex align-items-center gap-3">
+                <img src="profile.png" alt="User" class="rounded-circle" class="img-fluid" style="max-width: 30px; max-height: 30px;">
+                <span>Hi, Gowtham Raj</span>
             </div>
         </div>
 
         <h4 class="mb-4">Dashboard</h4>
 
-        <div class="row">
-            <div class="col-md-6">
+        <div class="dashboard-sections">
+            <div class="section-ipo-dashboard">
                 <h5 class="mb-3">IPO Dashboard India</h5>
                 <div class="circles-container">
                     <div class="stat-circle total-ipo">
@@ -243,46 +72,17 @@
                         <p>Total IPO</p>
                     </div>
                     <div class="stat-circle ipo-loss">
-                        <h2>20</h2>
+                        <h3>9</h3>
                         <p>IPO in Loss</p>
                     </div>
                     <div class="stat-circle ipo-gain">
-                        <h2>10</h2>
+                        <h2>20</h2>
                         <p>IPO in Gain</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6">
-                <div class="main-board">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h6>Main Board IPO</h6>
-                        <span class="text-muted small">From 01 Jan 2024</span>
-                    </div>
-                    <div class="donut-chart">
-                        <!-- Placeholder for donut chart -->
-                        <img src="/api/placeholder/200/200" alt="Donut Chart">
-                    </div>
-                    <div class="status-legend">
-                        <div class="status-item">
-                            <span class="status-dot bg-primary"></span>
-                            Upcoming (15)
-                        </div>
-                        <div class="status-item">
-                            <span class="status-dot bg-success"></span>
-                            New Listed (25)
-                        </div>
-                        <div class="status-item">
-                            <span class="status-dot bg-warning"></span>
-                            Ongoing (2)
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-6">
+                        
+            <div class="section-quick-links">
                 <div class="quick-links">
                     <h6 class="mb-3">Quick Links</h6>
                     <div class="link-item">
@@ -308,10 +108,36 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+            <div class="section-main-board">
+                <div class="main-board">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6>Main Board IPO</h6>
+                        <span class="text-muted small">From 01 Jan 2024</span>
+                    </div>
+                    <div class="donut-chart">
+                        <img src="/api/placeholder/200/200" alt="Donut Chart">
+                    </div>
+                    <div class="status-legend">
+                        <div class="status-item">
+                            <span class="status-dot bg-primary"></span>
+                            Upcoming (15)
+                        </div>
+                        <div class="status-item">
+                            <span class="status-dot bg-success"></span>
+                            New Listed (25)
+                        </div>
+                        <div class="status-item">
+                            <span class="status-dot bg-warning"></span>
+                            Ongoing (2)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
 </body>
 </html>
