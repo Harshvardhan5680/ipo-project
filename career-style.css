@@ -114,11 +114,18 @@
 
 .app-text {
     margin-left: 50px;
+    margin-right: 100px;
 }
 
 .highlight {
-    color: yellow;
+    color: #ffc902;
     font-weight: bold;
+    padding-top: 50%;
+}
+
+.download-text{
+    font-size: larger;
+    font-weight: lighter;
 }
 
 .input-container {
@@ -140,13 +147,13 @@
 
 .input-container .send-link {
     position: absolute;
-    right: 0;
+    right: 0.5%;
     top: 5%;
-    bottom: 0;
+    bottom: 5%;
     background: #2e51ff;
     color: white;
     border: 1cm;
-    border-radius: 0.5cm;
+    border-radius: 5%;
     border-color: #fff;
     padding: 10px 20px;
     font-size: 14px;
@@ -173,6 +180,7 @@
     margin-right: 10px;
     cursor: pointer;
     border-radius: 0.2cm;
+    display: flexbox;
 }
 
 footer {
