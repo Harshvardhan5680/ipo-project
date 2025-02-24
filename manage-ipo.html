@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_min.png" type="image/x-icon">
+    <title>Bluestock - Manage IPO</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="iposcript.js"></script>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Bluestock Logo" height="15px" >
+        </div>
+        
+        <div class="menu-list">
+            <a href="index.html" class="menu-item">
+                <i class="fas fa-th-large"></i>
+                Dashboard
+            </a>
+            <a href="manage-ipo.html" class="menu-item active">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Manage IPO
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-chart-line"></i>
+                IPO Subscription
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-file-alt"></i>
+                IPO Allotment
+            </a>
+            <div class="mt-4 mb-2 ps-4 text-muted small">OTHERS</div>
+            <a href="#" class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-plug"></i>
+                API Manager
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-user"></i>
+                Account
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-question-circle"></i>
+                Help
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h4 class="mb-4">Upcoming IPO | Dashboard</h4>
+
+        <table class="ipo-table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Price Band</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                    <th>ISSUE SIZE</th>
+                    <th>ISSUE Type</th>
+                    <th>Listing Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                    <th>Delete/View</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adani Power</td>
+                    <td>₹ 129 - 136</td>
+                    <td>2024-06-03</td>
+                    <td>2024-06-05</td>
+                    <td>130.15 Cr.</td>
+                    <td>Book Built</td>
+                    <td>2024-06-10</td>
+                    <td><span class="status ongoing">Ongoing</span></td>
+                    <td><button class="update-btn">Update</button></td>
+                    <td><button class="delete-btn"><i class="fa fa-trash-o" style="font-size:20px;color: red;"></i></button> <button class="view-btn"><i class="fa fa-eye" style="font-size:20px"></i></button></td>
+                </tr>
+                <tr>
+                    <td>VBL LTD</td>
+                    <td>₹ 129 - 136</td>
+                    <td>2024-06-03</td>
+                    <td>2024-06-05</td>
+                    <td>130.15 Cr.</td>
+                    <td>Book Built</td>
+                    <td>2024-06-10</td>
+                    <td><span class="status coming">Coming</span></td>
+                    <td><button class="update-btn">Update</button></td>
+                    <td><button class="delete-btn"><i class="fa fa-trash-o" style="font-size:20px;color: red;"></i></button> <button class="view-btn"><i class="fa fa-eye" style="font-size:20px"></i></button></td>
+                </tr>
+                <tr>
+                    <td>Tata Motor</td>
+                    <td>₹ 129 - 136</td>
+                    <td>2024-06-03</td>
+                    <td>2024-06-05</td>
+                    <td>130.15 Cr.</td>
+                    <td>Book Built</td>
+                    <td>2024-06-10</td>
+                    <td><span class="status new-listed">New Listed</span></td>
+                    <td><button class="update-btn">Update</button></td>
+                    <td><button class="delete-btn"><i class="fa fa-trash-o" style="font-size:20px;color: red;"></i></button> <button class="view-btn"><i class="fa fa-eye" style="font-size:20px"></i></button></td>
+                </tr>
+                <tr>
+                    <td>Indus Power</td>
+                    <td>₹ 129 - 136</td>
+                    <td>2024-06-03</td>
+                    <td>2024-06-05</td>
+                    <td>130.15 Cr.</td>
+                    <td>Book Built</td>
+                    <td>2024-06-10</td>
+                    <td><span class="status new-listed">New Listed</span></td>
+                    <td><button class="update-btn">Update</button></td>
+                    <td><button class="delete-btn"><i class="fa fa-trash-o" style="font-size:20px;color: red;"></i></button> <button class="view-btn"><i class="fa fa-eye" style="font-size:20px"></i></button></td>
+                </tr>
+                <tr>
+                    <td>BSE India</td>
+                    <td>₹ 129 - 136</td>
+                    <td>2024-06-03</td>
+                    <td>2024-06-05</td>
+                    <td>130.15 Cr.</td>
+                    <td>Book Built</td>
+                    <td>2024-06-10</td>
+                    <td><span class="status new-listed">New Listed</span></td>
+                    <td><button class="update-btn">Update</button></td>
+                    <td><button class="delete-btn"><i class="fa fa-trash-o" style="font-size:20px;color: red;"></i></button> <button class="view-btn"><i class="fa fa-eye" style="font-size:20px"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
