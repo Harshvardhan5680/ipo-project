@@ -190,3 +190,61 @@ body {
     height: 8px;
     border-radius: 50%;
 }
+
+.menu-item.active {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.ipo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ipo-table th, .ipo-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.status.ongoing {
+    background-color: rgba(144, 238, 144, 0.371);
+    border-radius: 5cm;
+    color: green;
+    border-color: green;
+}
+
+.status.coming {
+    background-color: #ffdd4418;
+    border-radius: 5cm;
+    color: #ffa200;
+    border-color: #ffa102;
+}
+
+.status.new-listed {
+    background-color: rgba(255, 0, 0, 0.148);
+    border-radius: 5cm;
+    color: red;
+    border-color: red;
+}
+
+.update-btn {
+    background-color: #5b6ae8 ;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition:  0.3s ease-in-out;
+}
+
+.update-btn:hover {
+    background-color: #0056b3; 
+}
+
